@@ -358,6 +358,7 @@ h1{
   gap:12px
 }
 
+/* قاب دایره‌ای جدید برای عکس اعضای مجموعه */
 .person{
   text-align:center;
   padding:18px 8px;
@@ -367,13 +368,17 @@ h1{
 }
 
 .avatar{
-  width:70px;
-  height:70px;
+  width:86px;
+  height:86px;
+  padding:4px;
   border-radius:50%;
   margin:auto;
   overflow:hidden;
-  background:radial-gradient(circle,#6c5527,#17130b 65%);
-  border:1px solid var(--gold);
+  background:linear-gradient(145deg,#f4d68b,#b77c19,#f4d68b);
+  border:2px solid var(--gold);
+  box-shadow:
+    0 0 0 3px rgba(217,170,69,.12),
+    0 6px 18px rgba(0,0,0,.45);
   display:flex;
   align-items:center;
   justify-content:center
@@ -382,8 +387,11 @@ h1{
 .avatar img{
   width:100%;
   height:100%;
-  object-fit:cover;
-  display:block
+  display:block;
+  border-radius:50%;
+  object-fit:contain;
+  object-position:center;
+  background:#090909
 }
 
 .person b{
@@ -1068,8 +1076,8 @@ rel="noopener">📸 اینستاگرام</a>
 <div class="person">
 <div class="avatar">
 <img
-width="70"
-height="70"
+width="78"
+height="78"
 loading="lazy"
 decoding="async"
 src="./file_00000000587481f49f35d653b7f7c94d.png"
@@ -1082,8 +1090,8 @@ alt="امیر عباس درکلام">
 <div class="person">
 <div class="avatar">
 <img
-width="70"
-height="70"
+width="78"
+height="78"
 loading="lazy"
 decoding="async"
 src="./file_0000000004c8821083bca50e6c9c18ae.png"
@@ -1096,8 +1104,8 @@ alt="امیریاسین درکلام">
 <div class="person">
 <div class="avatar">
 <img
-width="70"
-height="70"
+width="78"
+height="78"
 loading="lazy"
 decoding="async"
 src="./file_0000000069608210af2f6ec208da6c9b.png"
@@ -1110,8 +1118,8 @@ alt="رادین میریان">
 <div class="person">
 <div class="avatar">
 <img
-width="70"
-height="70"
+width="78"
+height="78"
 loading="lazy"
 decoding="async"
 src="./file_000000003a748210bfd5c76b45c1dcc0.png"
